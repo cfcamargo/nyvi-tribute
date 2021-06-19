@@ -262,20 +262,164 @@ main{
     margin-top: 20px;
     width: 100%;
     height: 250px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     
 }
 
 
 
-footer {
+#contato {
     width: 100%;
     height: 400px;
     background-color: var(--color-primary);
-    border-radius: 50px ;
-    margin-top: -50px;
+    border-radius: 20px ;
+    margin-top: -90px;
 
 }
+
+#contato .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 990px;
+}
+
+
+
+#contato .container .footer-content{
+
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer-form form h3{
+
+    color: var(--gray-dark);
+
+}
+
+
+.footer-form p{
+    color: var(--gray-ligth);
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+
+}
+
+input{
+    margin-top: 8px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+    color: var(--color-primary);
+}
+
+textarea{
+    margin-top: 8px;
+    width: 100%;
+    height: 130px;
+    border: none;
+    border-radius: 2px;
+    padding: 3px;
+    color: var(--color-primary);
+
+}
+
+.form-submit{
+    border: none;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px;
+}
+
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+
+.contato-area{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.contato-social{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.contato-social .divisor-line,
+form .divisor-line{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 80px;
+}
+
+
+
+
+
+.contato-social a{
+    color: var(--gray-ligth);
+    padding: 10px 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.contato-social h3{
+    color: var(--gray-dark);
+}
+
+.contato-social a i{
+    font-size: 25px ;
+    margin-right: 20px;
+    
+
+}
+
+.footer-copy{
+    border-top: 1px solid var(--gray-darker);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.footer-copy span{
+
+    font-size: 13px;
+    color: var(--gray-primary);
+    margin-top: 15px;
+
+}
+
+
+
+
+
 
 
 @media screen and (min-width:500px){
@@ -475,6 +619,25 @@ footer {
 
     .career-video{
         height: 600px;
+    }
+
+
+
+    #contato .container .footer-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-form{
+        flex:2;
+        padding-right: 20px;
+        
+    }
+
+    .contato-area{
+        flex: 1;
+        padding-left: 30px;
     }
 
 }
